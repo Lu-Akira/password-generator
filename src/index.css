@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: monospace;
+  box-sizing: border-box;
 }
 
 .app {
@@ -11,50 +12,69 @@
   align-items: center;
 }
 
-.flex-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container {
   border: 1px solid black;
+  padding: 2.5rem 5rem;
   min-width: 520px;
-  padding: 2rem 5rem;
+  border-radius: 5px;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border-radius: 5px;
 }
 
-.generate-button {
-  padding: 0.8rem;
-  flex-grow: 1;
-  border-radius: 5px;
+.container-title {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.app-title {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-}
-
-.container-header {
+.container-body {
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem 0;
-  border-radius: 5px;
 }
 
-.container-content {
-  padding: 1rem 0;
-  border-radius: 5px;
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+}
+
+.checkbox-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
 
-.checkbox-wrapper {
+button {
+  padding: 8px 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.password-display {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+input {
+  padding: 8px;
+}
+
+.tmp {
   display: flex;
-  gap: 1ch;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span.char-counter {
+  font-size: 1.3rem;
+  font-weight: 650;
+}
+
+.length-wrapper {
+  display: flex;
+  flex-direction: column;
 }
