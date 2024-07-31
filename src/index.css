@@ -44,7 +44,7 @@
 .checkbox-group {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 12px;
 }
 
 button {
@@ -59,8 +59,16 @@ button {
   grid-template-columns: 5fr 1fr;
 }
 
-input {
+input[type="text"] {
   padding: 8px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
 }
 
 .tmp {
@@ -77,4 +85,5 @@ span.char-counter {
 .length-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
