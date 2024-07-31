@@ -44,13 +44,20 @@ function App() {
     setGeneratorConfig(newGeneratorConfig);
   };
 
+  const handleCopyButtonClicked = () => {
+    navigator.clipboard.writeText(generatedPassword);
+  };
+
   return (
     <div className="app">
       <div className="container">
         <Header headerContent="PASSWORD GENERATOR" />
 
         <div className="container-body">
-          <PasswordDisplay value={generatedPassword} />
+          <PasswordDisplay
+            value={generatedPassword}
+            onCopy={handleCopyButtonClicked}
+          />
 
           <LengthSlider
             label="Numbers of characters"
@@ -96,7 +103,9 @@ function App() {
         </div>
 
         <div className="container-footer">
-          <button onClick={generateRandomPassword}>generate password</button>
+          <button className="generate-button" onClick={generateRandomPassword}>
+            generate password
+          </button>
         </div>
       </div>
     </div>

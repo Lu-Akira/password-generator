@@ -1,14 +1,14 @@
-function PasswordDisplay({ value }) {
+function PasswordDisplay({ value, onCopy }) {
   return (
     <div className="password-display">
       <input
         type="text"
         name="password-display"
-        placeholder="generated-password"
+        placeholder="G3nerAtEd-p4s5wOrd"
         value={value}
         readOnly
       />
-      <button>copy</button>
+      <button onClick={onCopy}>copy</button>
     </div>
   );
 }
