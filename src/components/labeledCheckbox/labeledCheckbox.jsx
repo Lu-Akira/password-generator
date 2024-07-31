@@ -1,3 +1,5 @@
+import "./labeledCheckbox.css";
+
 function LabeledCheckbox({ label, onChange, checked }) {
   return (
     <div className="checkbox-wrapper">

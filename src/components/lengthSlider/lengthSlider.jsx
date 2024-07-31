@@ -1,7 +1,9 @@
+import "./lengthSlider.css";
+
 function LengthSlider({ onChange, min, max, value, label }) {
   return (
-    <div className="length-wrapper">
-      <div className="tmp">
+    <div className="length-slider">
+      <div className="slider-label-wrapper">
         <label htmlFor={label}>{label}</label>
         <span className="char-counter">{value}</span>
       </div>

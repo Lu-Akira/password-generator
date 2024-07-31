@@ -1,0 +1,17 @@
+.length-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slider-label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span.char-counter {
+  font-size: 1.3rem;
+  font-weight: 650;
+  color: var(--text-color);
+}

@@ -33,14 +33,17 @@ function App() {
 
   const handleSliderChange = (event) => {
     const newGeneratorConfig = structuredClone(generatorConfig);
+
     newGeneratorConfig.passwordLength = event.target.value;
     setGeneratorConfig(newGeneratorConfig);
   };
 
   const handleCheckboxChecked = (generatorParamName) => {
     const newGeneratorConfig = structuredClone(generatorConfig);
+
     newGeneratorConfig[generatorParamName] =
       !newGeneratorConfig[generatorParamName];
+
     setGeneratorConfig(newGeneratorConfig);
   };
 
@@ -108,6 +111,12 @@ function App() {
           </button>
         </div>
       </div>
+      <p>
+        Made with 💖 by{" "}
+        <a href="https://github.com/Lu-Akira" target="_blank">
+          @Lu-Akira
+        </a>
+      </p>
     </div>
   );
 }
