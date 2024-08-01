@@ -1,4 +1,5 @@
 import "./passwordDisplay.css";
+import { LuCopy, LuCheck } from "react-icons/lu";
 
 import { useState } from "react";
 
@@ -23,7 +24,7 @@ function PasswordDisplay({ value, onCopy }) {
         readOnly
       />
       <button className="copy-button" onClick={onCopyButtonClicked}>
-        {copied ? "copied" : "copy"}
+        {copied ? <LuCheck className="icon" /> : <LuCopy className="icon" />}
       </button>
     </div>
   );
